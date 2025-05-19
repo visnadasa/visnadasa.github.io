@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Путешествия </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .hero {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 50px;
+      color: #000;
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
+    .search-form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .search-form input,
+    .search-form select {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .search-button {
+      background-color: #0077ff;
+      color: white;
+      border-radius: 79px;
+      padding: 10px 20px;
+      border: none;
+      opacity: 0.75;
+    }
+
+    .section-title {
+      font-size: 50px;
+      color: #000;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      font-size: 15px;
+      color: #000;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card-tour {
+      border-radius: 18px;
+      overflow: hidden;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+      color: #888;
+    }
+
+    .destination-img {
+      width: 300%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <span class="logo"><img src= logo.png></span>
+    <nav>
+      <a href="#" class="nav-link d-inline">Главная</a>
+      <a href="#" class="nav-link d-inline">Направления</a>
+      <a href="#" class="nav-link d-inline">Контакты</a>
+    </nav>
+  </div>
+</nav>
+
+<!-- Главный блок -->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Открывайте мир</h1>
+    <p class="hero-subtitle">Открой для себя лучшие направления с нами</p>
+    <form class="search-form">
+      <input type="text" placeholder="Куда вы хотите отправиться?" />
+      <input type="date" placeholder="Когда" />
+      <button type="submit" class="search-button">Поиск</button>
+    </form>
+  </div>
+</section>
+
+<!-- Популярные направления -->
+<section class="container">
+  <h2 class="section-title">Популярные направления</h2>
+  <p class="section-subtitle">Открой для себя лучшие направления для вашего следующего путешествия</p>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card-tour">
+        <img src="2.png" alt="Бали" class="destination-img" />
+        <h5 class="mt-3">Бали</h5>
+        <p>Узнай больше о нашей компании и о нашей миссии</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card-tour">
+        <img src="1.png" alt="Париж" class="destination-img" />
+        <h5 class="mt-3">Париж</h5>
+        <p>Ознакомьтесь с нашими специально подобранными турами</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card-tour">
+        <img src="3.png" alt="Рим" class="destination-img" />
+        <h5 class="mt-3">Рим</h5>
+        <p>Погрузитесь в культуру и гастрономию Италии</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- О нас -->
+<section class="container">
+  <h2 class="section-title">О нас</h2>
+  <p class="section-subtitle">Наши туры</p>
+</section>
+
+<!-- Подвал -->
+<footer class="footer">
+  © 2025 Путешествия
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Подписка на рассылку</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+
+    .subscribe-container {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      background: rgba(162, 74, 74, 0.6);
+      border-radius: 6px;
+      padding: 30px;
+      opacity: 0.9;
+    }
+
+    .subscribe-logo {
+      width: 250px;
+      height: 100px;
+      margin-bottom: -70px;
+    }
+
+    .subscribe-title {
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .subscribe-text {
+      font-size: 10px;
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .form-control-email {
+      font-size: 10px;
+      border-radius: 6px;
+      padding: 6px 10px;
+      height: 30px;
+    }
+
+    .btn-subscribe {
+      background-color: #9cc1f0;
+      border: none;
+      font-size: 10px;
+      font-weight: 400;
+      border-radius: 3px;
+      padding: 5px 15px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<nav style="background-color: #e3f2fd; padding: 10px;">
+  <a href="popular.html" style="margin-right: 15px;">Популярные направления</a>
+  <a href="mail.html">Подписка на рассылку</a>
+</nav>
+<div class="subscribe-container">
+  <img src="logo.png" alt="Логотип" class="subscribe-logo" />
+  <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+  <p class="subscribe-text">Получай последние новости и специальные предложения</p>
+
+  <form>
+    <input type="email" class="form-control form-control-email mb-2" placeholder="Адрес электронной почты" required />
+    <button type="submit" class="btn btn-subscribe">Подписаться</button>
+  </form>
+</div>
+
+</body>
+</html>
